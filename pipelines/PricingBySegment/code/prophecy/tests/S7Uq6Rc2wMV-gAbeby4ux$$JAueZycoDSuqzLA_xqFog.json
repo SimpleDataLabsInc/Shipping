@@ -1,0 +1,107 @@
+{
+  "unitTests" : [ {
+    "data" : {
+      "8mYWUkw15f4mTJoUR2shi$$dKaIoa9L3vS6Zkgi-6nSm" : {
+        "values" : [ ],
+        "schema" : {
+          "type" : "struct",
+          "fields" : [ ]
+        },
+        "predicates" : [ ]
+      },
+      "FRZPYqyd9qsHI8EYfpVoz$$2m-s2vKUtFKOPCzPuH4pD" : {
+        "values" : [ [ "MACHINERY", "4.00", "6230.52", "0.09", "0.04", "N", "O", "true", "67" ], [ "MACHINERY", "12.00", "13358.28", "0.09", "0.05", "N", "O", "true", "67" ], [ "BUILDING", "12.00", "13608.60", "0.07", "0.03", "N", "O", "true", "7" ], [ "BUILDING", "9.00", "11594.16", "0.08", "0.08", "N", "O", "true", "7" ], [ "MACHINERY", "36.00", "56215.08", "0.02", "0.06", "N", "O", "false", "451" ], [ "MACHINERY", "42.00", "40320.84", "0.05", "0.01", "N", "O", "false", "451" ], [ "FURNITURE", "38.00", "69723.16", "0.06", "0.01", "A", "F", "false", "128" ], [ "HOUSEHOLD", "41.00", "54296.30", "0.00", "0.06", "A", "F", "false", "353" ], [ "HOUSEHOLD", "31.00", "61161.45", "0.09", "0.07", "A", "F", "true", "355" ], [ "HOUSEHOLD", "41.00", "42067.23", "0.05", "0.00", "A", "F", "false", "355" ] ],
+        "schema" : {
+          "type" : "struct",
+          "fields" : [ {
+            "name" : "MKTSEGMENT",
+            "type" : "string",
+            "nullable" : true,
+            "metadata" : {
+              "description" : "",
+              "mappings" : [ ],
+              "tags" : [ ]
+            }
+          }, {
+            "name" : "QUANTITY",
+            "type" : "decimal(12,2)",
+            "nullable" : true,
+            "metadata" : {
+              "description" : "",
+              "mappings" : [ ],
+              "tags" : [ ]
+            }
+          }, {
+            "name" : "EXTENDEDPRICE",
+            "type" : "decimal(12,2)",
+            "nullable" : true,
+            "metadata" : {
+              "description" : "",
+              "mappings" : [ ],
+              "tags" : [ ]
+            }
+          }, {
+            "name" : "DISCOUNT",
+            "type" : "decimal(12,2)",
+            "nullable" : true,
+            "metadata" : {
+              "description" : "",
+              "mappings" : [ ],
+              "tags" : [ ]
+            }
+          }, {
+            "name" : "TAX",
+            "type" : "decimal(12,2)",
+            "nullable" : true,
+            "metadata" : {
+              "description" : "",
+              "mappings" : [ ],
+              "tags" : [ ]
+            }
+          }, {
+            "name" : "RETURNFLAG",
+            "type" : "string",
+            "nullable" : true,
+            "metadata" : {
+              "description" : "",
+              "mappings" : [ ],
+              "tags" : [ ]
+            }
+          }, {
+            "name" : "DELIVERYSTATUS",
+            "type" : "string",
+            "nullable" : true,
+            "metadata" : {
+              "description" : "",
+              "mappings" : [ ],
+              "tags" : [ ]
+            }
+          }, {
+            "name" : "CLEARANCE",
+            "type" : "string",
+            "nullable" : true,
+            "metadata" : {
+              "description" : "",
+              "mappings" : [ ],
+              "tags" : [ ]
+            }
+          }, {
+            "name" : "ORDERKEY",
+            "type" : "decimal(38,0)",
+            "nullable" : true,
+            "metadata" : {
+              "description" : "",
+              "mappings" : [ ],
+              "tags" : [ ]
+            }
+          } ]
+        },
+        "predicates" : [ ]
+      }
+    },
+    "name" : "Unit Test ",
+    "testType" : "outputRow",
+    "language" : "python"
+  } ],
+  "language" : "python"
+}

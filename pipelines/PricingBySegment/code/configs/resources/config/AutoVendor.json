@@ -1,4 +1,5 @@
 {
   "market_segment" : "AUTOMOBILE",
-  "wholesale_discount" : 0.03
+  "wholesale_discount" : 0.03,
+  "threshold" : 100000
 }

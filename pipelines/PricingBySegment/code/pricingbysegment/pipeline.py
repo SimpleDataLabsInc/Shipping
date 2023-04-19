@@ -14,9 +14,8 @@ def pipeline(spark: SparkSession) -> None:
     df_AdjustCols = AdjustCols(spark, df_ByOrderkey)
     df_AdjustCols = df_AdjustCols.cache()
     df_BySegment = BySegment(spark, df_AdjustCols)
-    df_FoodOrders = FoodOrders(spark, Config.FoodOrders)
     df_SumAmounts = SumAmounts(spark, df_BySegment)
-    Pricing(spark, df_SumAmounts)
+    ShippingReportSegmented(spark, df_SumAmounts)
 
 def main():
     spark = SparkSession.builder\

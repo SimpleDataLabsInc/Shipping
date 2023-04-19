@@ -36,15 +36,14 @@ pipelines:
     artefactID: ''
     language: python
     createdAt: '2023-03-13 21:42:50'
-    modifiedAt: '2023-04-11 15:52:04'
+    modifiedAt: '2023-04-19 04:36:15'
     datasets:
       inputs:
       - datasets/OrdersNCustomers
       - datasets/Shipments
       outputs:
-      - datasets/Pricing
-    subgraphs:
-    - gitUri=http://gitserver:3000/nFfG9w8u_team_2155/nFfG9w8u_project_3246.git&subPath=&tag=HelloWorld/1.0.7&projectSubscriptionProjectId=3246&path=subgraphs/FoodOrders
+      - datasets/ShippingReportSegmented
+    subgraphs: []
     dependencies: {}
   pipelines/Retail:
     name: Retail
@@ -260,6 +259,21 @@ datasets:
         author: sparklearner123@gmail.com
         createdAt: '2023-04-18 22:03:00'
         modifiedAt: '2023-04-18 22:03:00'
+  datasets/ShippingReportSegmented:
+    name: ShippingReportSegmented
+    description: ''
+    author: anya@prophecy.io
+    createdAt: '2023-04-19 04:33:45'
+    modifiedAt: '2023-04-19 04:33:45'
+    mode: batch
+    physicalDatasets:
+      dev:
+        fabricId: 5369
+        datasetType: File
+        description: ''
+        author: anya@prophecy.io
+        createdAt: '2023-04-19 04:33:45'
+        modifiedAt: '2023-04-19 04:33:45'
 templates: {}
 jobs:
   jobs/WeeklyPricingReportPerVendor:
@@ -306,6 +320,10 @@ subgraphs:
     createdAt: '2023-04-18 22:10:12'
     modifiedAt: '2023-04-18 22:10:12'
 sqlModels: {}
+sqlMacros: {}
+sqlSeeds: {}
+sqlSources: {}
+sqlUnreferencedSources: {}
 sqlPipeline: null
 dependencies: []
 projectDependencies:

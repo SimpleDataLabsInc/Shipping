@@ -63,3 +63,7 @@ Configured pricing pipeline to run with a scheduled job in Production
 *** Release notes for version: 1.1.7 ***
 
 This release includes a configured job to run on Databricks
+
+*** Release notes for version: 0.0.6 ***
+
+remove extra configurations

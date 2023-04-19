@@ -67,3 +67,7 @@ This release includes a configured job to run on Databricks
 *** Release notes for version: 0.0.6 ***
 
 remove extra configurations
+
+*** Release notes for version: 1.0.1 ***
+
+updates the aggregation logic
